@@ -1,0 +1,6 @@
+JavaScriptStatements.html
+http://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_statements
+Comentarios.html
+http://www.w3schools.com/js/tryit.asp?filename=tryjs_comments4
+Operadores.html
+http://www.w3schools.com/js/tryit.asp?filename=tryjs_oper

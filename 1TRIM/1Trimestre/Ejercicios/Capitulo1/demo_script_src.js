@@ -1,0 +1,1 @@
+document.getElementById("demo").innerHTML = "This text comes from an external script.";

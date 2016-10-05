@@ -1,0 +1,55 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<title>Calculador Sencilla en JavaScript</title>
+<link rel="stylesheet" type="text/css" href="./calculadora.css">
+<script>
+function calcula(){
+    var operando1 = document.calc.operando1.value
+    var operando2 = document.calc.operando2.value
+	var operacion = document.calc.operacion
+    var result = eval(operando1 + operacion + operando2)
+    document.calc.resultado.value = result
+}
+</script> 
+
+</head>
+<body>
+
+<form name="calc">
+<input class="buttonop" type="Button" name="" value="/" onclick="operacion= '/'">
+<input class="buttonop" type="Button" name="" value="*" onclick="operacion= '*'">
+<input class="buttonop" type="Button" name="" value="-" onclick="operacion= '-'">
+<br>
+<input class="button" type="Button" name="" value=" 7 " onclick="operando1 += 7">
+<input class="button" type="Button" name="" value=" 8 " onclick="operando1 += 8">
+<input class="button" type="Button" name="" value=" 9 " onclick="operando1 += 9">
+<input class="button2v" type="Button" name="" value="+" onclick="operacion= '+'">
+<br>
+<input class="button" type="Button" name="" value=" 4 " onclick="operando1 += 4">
+<input class="button" type="Button" name="" value=" 5 " onclick="operando1 += 5">
+<input class="button" type="Button" name="" value=" 6 " onclick="operando1 += 6">
+<input class="button2v" type="Button" name="" value="=" onclick="calcula()">
+<br>
+<input class="button" type="Button" name="" value=" 1 " onclick="operando1 += 1">
+<input class="button" type="Button" name="" value=" 2 " onclick="operando1 += 2">
+<input class="button" type="Button" name="" value=" 3 " onclick="operando1 += 3">
+<br>
+<input class="button" type="Button" name="" value=" 0 " onclick="operando1 += 0">
+<input class="button2h" type="Button" name="" value="." onclick="operando1 += .">
+<br>
+<br>
+<input type="Text" name="todo" value="0" size="12" disabled>
+<input type="Text" name="operando1" value="0" size="12" disabled>
+<input type="Text" name="operando2" value="0" size="12" disabled>
+<input type="Text" name="operancion" value="0" size="12" disabled>
+<br>
+
+<br>
+<input type="Text" name="resultado" value="0" size="12">
+</form> 
+
+</body>
+</html>
