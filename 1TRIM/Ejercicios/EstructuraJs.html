@@ -1,0 +1,24 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+				var linea="";
+				for (i = 1; i < 9; i++) {
+					for (e = 1; e < 9; e++) {
+						debugger;
+						if(i%2 == 0){e+=1;
+						}
+						if(e%2 == 0){linea += "#";
+						}
+						if(e%2 != 0){linea += "-";
+						}
+						if(i%2 == 0){e= e-1;
+						}
+					}
+					console.log(linea);
+					linea="";
+				}
+		</script>
+	</body>
+</html>
